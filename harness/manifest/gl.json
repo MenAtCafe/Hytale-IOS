@@ -1,0 +1,3500 @@
+{
+ "schema": 1,
+ "generated": "2026-10-18T03:19:28+00:00",
+ "sources": {
+  "surface": "gl-surface.json",
+  "prototypes": "OpenGL.framework/Headers/gl3.h",
+  "dylib": "harness/out/libHytaleGL.dylib"
+ },
+ "summary": {
+  "declared": 145,
+  "exported": 65,
+  "wireup": 0,
+  "missing": 80,
+  "no_equivalent": 7,
+  "extensions": 6,
+  "unreachable": [
+   "glBeginTransformFeedback",
+   "glBindAttribLocation",
+   "glBindBufferRange",
+   "glBindImageTexture",
+   "glBindSampler",
+   "glBlendEquation",
+   "glBlendEquationSeparate",
+   "glBlendFuncSeparate",
+   "glBlendFuncSeparatei",
+   "glBlendFunci",
+   "glBlitFramebuffer",
+   "glBufferSubData",
+   "glClearBufferfv",
+   "glClearStencil",
+   "glClearTexImage",
+   "glClearTexSubImage",
+   "glColorMask",
+   "glCopyTexSubImage2D",
+   "glDeleteFramebuffers",
+   "glDeleteSamplers",
+   "glDeleteVertexArrays",
+   "glDetachShader",
+   "glDrawBuffer",
+   "glDrawBuffers",
+   "glEndTransformFeedback",
+   "glGenSamplers",
+   "glGenerateMipmap",
+   "glGetAttribLocation",
+   "glGetFloatv",
+   "glGetFramebufferAttachmentParameteriv",
+   "glGetIntegerv",
+   "glGetProgramInfoLog",
+   "glGetProgramiv",
+   "glGetQueryObjectui64v",
+   "glGetShaderInfoLog",
+   "glGetShaderiv",
+   "glGetSynciv",
+   "glGetTexImage",
+   "glGetUniformBlockIndex",
+   "glHint",
+   "glMemoryBarrier",
+   "glObjectLabel",
+   "glPixelStorei",
+   "glPointSize",
+   "glPolygonMode",
+   "glPolygonOffset",
+   "glPopDebugGroup",
+   "glPushDebugGroup",
+   "glQueryCounter",
+   "glReadBuffer",
+   "glSamplerParameteri",
+   "glStencilFunc",
+   "glStencilFuncSeparate",
+   "glStencilMask",
+   "glStencilOp",
+   "glStencilOpSeparate",
+   "glTexBuffer",
+   "glTexImage1D",
+   "glTexImage3D",
+   "glTexParameterf",
+   "glTexParameterfv",
+   "glTexSubImage2D",
+   "glTexSubImage3D",
+   "glTransformFeedbackVaryings",
+   "glUniform1fv",
+   "glUniform1iv",
+   "glUniform1uiv",
+   "glUniform2f",
+   "glUniform2fv",
+   "glUniform2i",
+   "glUniform3f",
+   "glUniform3fv",
+   "glUniform3i",
+   "glUniform3ui",
+   "glUniform4fv",
+   "glUniform4i",
+   "glUniformBlockBinding",
+   "glVertexAttrib2f",
+   "glVertexAttribI2i",
+   "glVertexAttribIPointer"
+  ],
+  "reachable_pct": 44.8
+ },
+ "functions": {
+  "glActiveTexture": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "texture",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glAttachShader": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "shader",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBeginQuery": {
+   "group": "query",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "id",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBeginTransformFeedback": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "primitiveMode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glBindAttribLocation": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "name",
+     "type": "const GLchar*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindBuffer": {
+   "group": "buffer",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "buffer",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindBufferBase": {
+   "group": "buffer",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "buffer",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindBufferRange": {
+   "group": "buffer",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "buffer",
+     "type": "GLuint"
+    },
+    {
+     "name": "offset",
+     "type": "GLintptr"
+    },
+    {
+     "name": "size",
+     "type": "GLsizeiptr"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindFramebuffer": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "framebuffer",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindImageTexture": {
+   "group": "image",
+   "ret": "void",
+   "args": [
+    {
+     "name": "unit",
+     "type": "GLenum"
+    },
+    {
+     "name": "texture",
+     "type": "GLuint"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "layered",
+     "type": "GLboolean"
+    },
+    {
+     "name": "layer",
+     "type": "GLint"
+    },
+    {
+     "name": "access",
+     "type": "GLenum"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glBindSampler": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "unit",
+     "type": "GLuint"
+    },
+    {
+     "name": "sampler",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindTexture": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "texture",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBindVertexArray": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "array",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlendEquation": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlendEquationSeparate": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "modeRGB",
+     "type": "GLenum"
+    },
+    {
+     "name": "modeAlpha",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlendFunc": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "sfactor",
+     "type": "GLenum"
+    },
+    {
+     "name": "dfactor",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlendFuncSeparate": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "sfactorRGB",
+     "type": "GLenum"
+    },
+    {
+     "name": "dfactorRGB",
+     "type": "GLenum"
+    },
+    {
+     "name": "sfactorAlpha",
+     "type": "GLenum"
+    },
+    {
+     "name": "dfactorAlpha",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlendFuncSeparatei": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "buf",
+     "type": "GLuint"
+    },
+    {
+     "name": "srcRGB",
+     "type": "GLenum"
+    },
+    {
+     "name": "dstRGB",
+     "type": "GLenum"
+    },
+    {
+     "name": "srcAlpha",
+     "type": "GLenum"
+    },
+    {
+     "name": "dstAlpha",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlendFunci": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "buf",
+     "type": "GLuint"
+    },
+    {
+     "name": "src",
+     "type": "GLenum"
+    },
+    {
+     "name": "dst",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBlitFramebuffer": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "srcX0",
+     "type": "GLint"
+    },
+    {
+     "name": "srcY0",
+     "type": "GLint"
+    },
+    {
+     "name": "srcX1",
+     "type": "GLint"
+    },
+    {
+     "name": "srcY1",
+     "type": "GLint"
+    },
+    {
+     "name": "dstX0",
+     "type": "GLint"
+    },
+    {
+     "name": "dstY0",
+     "type": "GLint"
+    },
+    {
+     "name": "dstX1",
+     "type": "GLint"
+    },
+    {
+     "name": "dstY1",
+     "type": "GLint"
+    },
+    {
+     "name": "mask",
+     "type": "GLbitfield"
+    },
+    {
+     "name": "filter",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBufferData": {
+   "group": "buffer",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "size",
+     "type": "GLsizeiptr"
+    },
+    {
+     "name": "data",
+     "type": "const GLvoid*"
+    },
+    {
+     "name": "usage",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glBufferSubData": {
+   "group": "buffer",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "offset",
+     "type": "GLintptr"
+    },
+    {
+     "name": "size",
+     "type": "GLsizeiptr"
+    },
+    {
+     "name": "data",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glCheckFramebufferStatus": {
+   "group": "fbo",
+   "ret": "GLenum",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glClear": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mask",
+     "type": "GLbitfield"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glClearBufferfv": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "buffer",
+     "type": "GLenum"
+    },
+    {
+     "name": "drawbuffer",
+     "type": "GLint"
+    },
+    {
+     "name": "value",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glClearColor": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "red",
+     "type": "GLfloat"
+    },
+    {
+     "name": "green",
+     "type": "GLfloat"
+    },
+    {
+     "name": "blue",
+     "type": "GLfloat"
+    },
+    {
+     "name": "alpha",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glClearDepth": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "depth",
+     "type": "GLclampd"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glClearStencil": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "s",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glClearTexImage": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "texture",
+     "type": "GLuint"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "data",
+     "type": "const void *"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glClearTexSubImage": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "texture",
+     "type": "GLuint"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "xoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "yoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "zoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "depth",
+     "type": "GLsizei"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "data",
+     "type": "const void *"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glClientWaitSync": {
+   "group": "sync",
+   "ret": "GLenum",
+   "args": [
+    {
+     "name": "sync",
+     "type": "GLsync"
+    },
+    {
+     "name": "flags",
+     "type": "GLbitfield"
+    },
+    {
+     "name": "timeout",
+     "type": "GLuint64"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glColorMask": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "red",
+     "type": "GLboolean"
+    },
+    {
+     "name": "green",
+     "type": "GLboolean"
+    },
+    {
+     "name": "blue",
+     "type": "GLboolean"
+    },
+    {
+     "name": "alpha",
+     "type": "GLboolean"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glCompileShader": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "shader",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glCopyTexSubImage2D": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "xoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "yoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "x",
+     "type": "GLint"
+    },
+    {
+     "name": "y",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glCreateProgram": {
+   "group": "shader",
+   "ret": "GLuint",
+   "args": [],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glCreateShader": {
+   "group": "shader",
+   "ret": "GLuint",
+   "args": [
+    {
+     "name": "type",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glCullFace": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteBuffers": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "buffers",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteFramebuffers": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "framebuffers",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteProgram": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteQueries": {
+   "group": "query",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "ids",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteSamplers": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "samplers",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteShader": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "shader",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteSync": {
+   "group": "sync",
+   "ret": "void",
+   "args": [
+    {
+     "name": "sync",
+     "type": "GLsync"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteTextures": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "textures",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDeleteVertexArrays": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "arrays",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDepthFunc": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "func",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDepthMask": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "flag",
+     "type": "GLboolean"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDetachShader": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "shader",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDisable": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "cap",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDrawArrays": {
+   "group": "draw",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    },
+    {
+     "name": "first",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDrawArraysInstanced": {
+   "group": "draw",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    },
+    {
+     "name": "first",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "instancecount",
+     "type": "GLsizei"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDrawBuffer": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDrawBuffers": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "bufs",
+     "type": "const GLenum*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDrawElements": {
+   "group": "draw",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "indices",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glDrawElementsInstanced": {
+   "group": "draw",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "indices",
+     "type": "const GLvoid*"
+    },
+    {
+     "name": "instancecount",
+     "type": "GLsizei"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glEnable": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "cap",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glEnableVertexAttribArray": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "index",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glEndQuery": {
+   "group": "query",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glEndTransformFeedback": {
+   "group": "misc",
+   "ret": "void",
+   "args": [],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glFenceSync": {
+   "group": "sync",
+   "ret": "GLsync",
+   "args": [
+    {
+     "name": "condition",
+     "type": "GLenum"
+    },
+    {
+     "name": "flags",
+     "type": "GLbitfield"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glFlush": {
+   "group": "misc",
+   "ret": "void",
+   "args": [],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glFramebufferTexture2D": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "attachment",
+     "type": "GLenum"
+    },
+    {
+     "name": "textarget",
+     "type": "GLenum"
+    },
+    {
+     "name": "texture",
+     "type": "GLuint"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenBuffers": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "buffers",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenFramebuffers": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "framebuffers",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenQueries": {
+   "group": "query",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "ids",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenSamplers": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "samplers",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenTextures": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "textures",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenVertexArrays": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "n",
+     "type": "GLsizei"
+    },
+    {
+     "name": "arrays",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGenerateMipmap": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetAttribLocation": {
+   "group": "shader",
+   "ret": "GLint",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "name",
+     "type": "const GLchar*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetBufferSubData": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "offset",
+     "type": "GLintptr"
+    },
+    {
+     "name": "size",
+     "type": "GLsizeiptr"
+    },
+    {
+     "name": "data",
+     "type": "GLvoid*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetError": {
+   "group": "misc",
+   "ret": "GLenum",
+   "args": [],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetFloatv": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetFramebufferAttachmentParameteriv": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "attachment",
+     "type": "GLenum"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetIntegerv": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetProgramInfoLog": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "bufSize",
+     "type": "GLsizei"
+    },
+    {
+     "name": "length",
+     "type": "GLsizei*"
+    },
+    {
+     "name": "infoLog",
+     "type": "GLchar*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetProgramiv": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetQueryObjectui64v": {
+   "group": "query",
+   "ret": "void",
+   "args": [
+    {
+     "name": "id",
+     "type": "GLuint"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLuint64*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glGetQueryObjectuiv": {
+   "group": "query",
+   "ret": "void",
+   "args": [
+    {
+     "name": "id",
+     "type": "GLuint"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLuint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetShaderInfoLog": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "shader",
+     "type": "GLuint"
+    },
+    {
+     "name": "bufSize",
+     "type": "GLsizei"
+    },
+    {
+     "name": "length",
+     "type": "GLsizei*"
+    },
+    {
+     "name": "infoLog",
+     "type": "GLchar*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetShaderiv": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "shader",
+     "type": "GLuint"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "GLint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetString": {
+   "group": "misc",
+   "ret": "const GLubyte*",
+   "args": [
+    {
+     "name": "name",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetSynciv": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "sync",
+     "type": "GLsync"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "bufSize",
+     "type": "GLsizei"
+    },
+    {
+     "name": "length",
+     "type": "GLsizei*"
+    },
+    {
+     "name": "values",
+     "type": "GLint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetTexImage": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetUniformBlockIndex": {
+   "group": "uniform",
+   "ret": "GLuint",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "uniformBlockName",
+     "type": "const GLchar*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glGetUniformLocation": {
+   "group": "shader",
+   "ret": "GLint",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "name",
+     "type": "const GLchar*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glHint": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glLinkProgram": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glMapBufferRange": {
+   "group": "buffer",
+   "ret": "GLvoid*",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "offset",
+     "type": "GLintptr"
+    },
+    {
+     "name": "length",
+     "type": "GLsizeiptr"
+    },
+    {
+     "name": "access",
+     "type": "GLbitfield"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glMemoryBarrier": {
+   "group": "image",
+   "ret": "void",
+   "args": [
+    {
+     "name": "barriers",
+     "type": "GLbitfield"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glObjectLabel": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "identifier",
+     "type": "GLenum"
+    },
+    {
+     "name": "name",
+     "type": "GLuint"
+    },
+    {
+     "name": "length",
+     "type": "GLsizei"
+    },
+    {
+     "name": "label",
+     "type": "const GLchar *"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glPixelStorei": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "param",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glPointSize": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "size",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glPolygonMode": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "face",
+     "type": "GLenum"
+    },
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glPolygonOffset": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "factor",
+     "type": "GLfloat"
+    },
+    {
+     "name": "units",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glPopDebugGroup": {
+   "group": "misc",
+   "ret": "void",
+   "args": [],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glPushDebugGroup": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "source",
+     "type": "GLenum"
+    },
+    {
+     "name": "id",
+     "type": "GLuint"
+    },
+    {
+     "name": "length",
+     "type": "GLsizei"
+    },
+    {
+     "name": "message",
+     "type": "const GLchar *"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "override"
+  },
+  "glQueryCounter": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "id",
+     "type": "GLuint"
+    },
+    {
+     "name": "target",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glReadBuffer": {
+   "group": "fbo",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glReadPixels": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "x",
+     "type": "GLint"
+    },
+    {
+     "name": "y",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "GLvoid*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glSamplerParameteri": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "sampler",
+     "type": "GLuint"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "param",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glScissor": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "x",
+     "type": "GLint"
+    },
+    {
+     "name": "y",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glShaderSource": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "shader",
+     "type": "GLuint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "string",
+     "type": "const GLchar*const*"
+    },
+    {
+     "name": "length",
+     "type": "const GLint*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glStencilFunc": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "func",
+     "type": "GLenum"
+    },
+    {
+     "name": "ref",
+     "type": "GLint"
+    },
+    {
+     "name": "mask",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glStencilFuncSeparate": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "face",
+     "type": "GLenum"
+    },
+    {
+     "name": "func",
+     "type": "GLenum"
+    },
+    {
+     "name": "ref",
+     "type": "GLint"
+    },
+    {
+     "name": "mask",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glStencilMask": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mask",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glStencilOp": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "fail",
+     "type": "GLenum"
+    },
+    {
+     "name": "zfail",
+     "type": "GLenum"
+    },
+    {
+     "name": "zpass",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glStencilOpSeparate": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "face",
+     "type": "GLenum"
+    },
+    {
+     "name": "sfail",
+     "type": "GLenum"
+    },
+    {
+     "name": "dpfail",
+     "type": "GLenum"
+    },
+    {
+     "name": "dppass",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexBuffer": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "internalformat",
+     "type": "GLenum"
+    },
+    {
+     "name": "buffer",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexImage1D": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "internalformat",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "border",
+     "type": "GLint"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexImage2D": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "internalformat",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "border",
+     "type": "GLint"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexImage2DMultisample": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "samples",
+     "type": "GLsizei"
+    },
+    {
+     "name": "internalformat",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "fixedsamplelocations",
+     "type": "GLboolean"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glTexImage3D": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "internalformat",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "depth",
+     "type": "GLsizei"
+    },
+    {
+     "name": "border",
+     "type": "GLint"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexParameterf": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "param",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexParameterfv": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "params",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexParameteri": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "pname",
+     "type": "GLenum"
+    },
+    {
+     "name": "param",
+     "type": "GLint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexSubImage2D": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "xoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "yoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTexSubImage3D": {
+   "group": "texture",
+   "ret": "void",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    },
+    {
+     "name": "level",
+     "type": "GLint"
+    },
+    {
+     "name": "xoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "yoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "zoffset",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    },
+    {
+     "name": "depth",
+     "type": "GLsizei"
+    },
+    {
+     "name": "format",
+     "type": "GLenum"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "pixels",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glTransformFeedbackVaryings": {
+   "group": "misc",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "varyings",
+     "type": "const GLchar*const*"
+    },
+    {
+     "name": "bufferMode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": true,
+   "source": "header"
+  },
+  "glUniform1f": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform1fv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "value",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform1i": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform1iv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "value",
+     "type": "const GLint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform1uiv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "value",
+     "type": "const GLuint*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform2f": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLfloat"
+    },
+    {
+     "name": "v1",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform2fv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "value",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform2i": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLint"
+    },
+    {
+     "name": "v1",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform3f": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLfloat"
+    },
+    {
+     "name": "v1",
+     "type": "GLfloat"
+    },
+    {
+     "name": "v2",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform3fv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "value",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform3i": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLint"
+    },
+    {
+     "name": "v1",
+     "type": "GLint"
+    },
+    {
+     "name": "v2",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform3ui": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLuint"
+    },
+    {
+     "name": "v1",
+     "type": "GLuint"
+    },
+    {
+     "name": "v2",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform4f": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLfloat"
+    },
+    {
+     "name": "v1",
+     "type": "GLfloat"
+    },
+    {
+     "name": "v2",
+     "type": "GLfloat"
+    },
+    {
+     "name": "v3",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform4fv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "value",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniform4i": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "v0",
+     "type": "GLint"
+    },
+    {
+     "name": "v1",
+     "type": "GLint"
+    },
+    {
+     "name": "v2",
+     "type": "GLint"
+    },
+    {
+     "name": "v3",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniformBlockBinding": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    },
+    {
+     "name": "uniformBlockIndex",
+     "type": "GLuint"
+    },
+    {
+     "name": "uniformBlockBinding",
+     "type": "GLuint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUniformMatrix4fv": {
+   "group": "uniform",
+   "ret": "void",
+   "args": [
+    {
+     "name": "location",
+     "type": "GLint"
+    },
+    {
+     "name": "count",
+     "type": "GLsizei"
+    },
+    {
+     "name": "transpose",
+     "type": "GLboolean"
+    },
+    {
+     "name": "value",
+     "type": "const GLfloat*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUnmapBuffer": {
+   "group": "buffer",
+   "ret": "GLboolean",
+   "args": [
+    {
+     "name": "target",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glUseProgram": {
+   "group": "shader",
+   "ret": "void",
+   "args": [
+    {
+     "name": "program",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glVertexAttrib2f": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "x",
+     "type": "GLfloat"
+    },
+    {
+     "name": "y",
+     "type": "GLfloat"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glVertexAttribDivisor": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "divisor",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glVertexAttribI2i": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "x",
+     "type": "GLint"
+    },
+    {
+     "name": "y",
+     "type": "GLint"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glVertexAttribIPointer": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "size",
+     "type": "GLint"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "stride",
+     "type": "GLsizei"
+    },
+    {
+     "name": "pointer",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "missing",
+   "exported": false,
+   "shim_impl": false,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glVertexAttribPointer": {
+   "group": "vertex",
+   "ret": "void",
+   "args": [
+    {
+     "name": "index",
+     "type": "GLuint"
+    },
+    {
+     "name": "size",
+     "type": "GLint"
+    },
+    {
+     "name": "type",
+     "type": "GLenum"
+    },
+    {
+     "name": "normalized",
+     "type": "GLboolean"
+    },
+    {
+     "name": "stride",
+     "type": "GLsizei"
+    },
+    {
+     "name": "pointer",
+     "type": "const GLvoid*"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  },
+  "glViewport": {
+   "group": "state",
+   "ret": "void",
+   "args": [
+    {
+     "name": "x",
+     "type": "GLint"
+    },
+    {
+     "name": "y",
+     "type": "GLint"
+    },
+    {
+     "name": "width",
+     "type": "GLsizei"
+    },
+    {
+     "name": "height",
+     "type": "GLsizei"
+    }
+   ],
+   "status": "exported",
+   "exported": true,
+   "shim_impl": true,
+   "no_equivalent": false,
+   "source": "header"
+  }
+ },
+ "extensions": {
+  "glDispatchCompute": {
+   "group": "extension",
+   "ret": "void",
+   "args": [
+    {
+     "name": "x",
+     "type": "GLuint"
+    },
+    {
+     "name": "y",
+     "type": "GLuint"
+    },
+    {
+     "name": "z",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true
+  },
+  "glEndFrame": {
+   "group": "extension",
+   "ret": "void",
+   "args": [],
+   "status": "exported",
+   "exported": true
+  },
+  "glFinish": {
+   "group": "extension",
+   "ret": "void",
+   "args": [],
+   "status": "exported",
+   "exported": true
+  },
+  "glFrontFace": {
+   "group": "extension",
+   "ret": "void",
+   "args": [
+    {
+     "name": "mode",
+     "type": "GLenum"
+    }
+   ],
+   "status": "exported",
+   "exported": true
+  },
+  "glGetResolvedTexture": {
+   "group": "extension",
+   "ret": "GLuint",
+   "args": [
+    {
+     "name": "id",
+     "type": "GLuint"
+    }
+   ],
+   "status": "exported",
+   "exported": true
+  },
+  "glIsSync": {
+   "group": "extension",
+   "ret": "GLboolean",
+   "args": [
+    {
+     "name": "sync",
+     "type": "GLsync"
+    }
+   ],
+   "status": "exported",
+   "exported": true
+  }
+ }
+}

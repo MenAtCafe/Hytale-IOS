@@ -1,0 +1,53 @@
+# game files and derived material
+Assets.zip
+Assets/
+HytaleClient*
+Hytale.app/
+shaders/
+build/
+*.glsl
+*.spv
+*.metal
+*.dylib
+gate2/*.txt
+# third-party tools and build output
+tools/
+machomorph/
+*.app/
+*.o
+*.air
+slice/mc/
+slice/app/HytaleSlice
+gate4/gltest
+modulecache/
+slice/tmp/
+DerivedData/
+*.zip
+# runtime junk
+*.pid
+*.log
+*.out
+# screenshots: keep a few
+slice/*.png
+gate*/*.png
+!slice/deferred-final.png
+!slice/instanced-final.png
+!slice/transparency.png
+!slice/compute-particles.png
+!slice/msaa-fixed.png
+*.mov
+*.mp4
+# secrets and OS noise
+.env
+*token*
+*credentials*
+.DS_Store
+
+ShaderSources.swift
+test_dlsym
+
+# keep the patched SDL used by the probe
+!harness/vendor/SDL3.dylib
+
+# harness build outputs
+harness/out/

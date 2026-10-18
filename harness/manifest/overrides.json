@@ -1,0 +1,86 @@
+{
+  "glBindImageTexture": {
+    "ret": "void",
+    "args": [["GLenum","unit"],["GLuint","texture"],["GLint","level"],["GLboolean","layered"],["GLint","layer"],["GLenum","access"],["GLenum","format"]],
+    "group": "image",
+    "note": "GL 4.2; macOS gl3.h is 4.1"
+  },
+  "glMemoryBarrier": {
+    "ret": "void",
+    "args": [["GLbitfield","barriers"]],
+    "group": "image",
+    "note": "GL 4.2"
+  },
+  "glClearTexImage": {
+    "ret": "void",
+    "args": [["GLuint","texture"],["GLint","level"],["GLenum","format"],["GLenum","type"],["const void *","data"]],
+    "group": "state",
+    "note": "GL 4.4"
+  },
+  "glClearTexSubImage": {
+    "ret": "void",
+    "args": [["GLuint","texture"],["GLint","level"],["GLint","xoffset"],["GLint","yoffset"],["GLint","zoffset"],["GLsizei","width"],["GLsizei","height"],["GLsizei","depth"],["GLenum","format"],["GLenum","type"],["const void *","data"]],
+    "group": "state",
+    "note": "GL 4.4"
+  },
+  "glObjectLabel": {
+    "ret": "void",
+    "args": [["GLenum","identifier"],["GLuint","name"],["GLsizei","length"],["const GLchar *","label"]],
+    "group": "misc",
+    "note": "GL 4.3 / KHR_debug"
+  },
+  "glPushDebugGroup": {
+    "ret": "void",
+    "args": [["GLenum","source"],["GLuint","id"],["GLsizei","length"],["const GLchar *","message"]],
+    "group": "misc",
+    "note": "GL 4.3 / KHR_debug"
+  },
+  "glPopDebugGroup": {
+    "ret": "void",
+    "args": [],
+    "group": "misc",
+    "note": "GL 4.3 / KHR_debug"
+  },
+  "glFrontFace": {
+    "ret": "void",
+    "args": [["GLenum","mode"]],
+    "group": "extension",
+    "extension": true,
+    "note": "declared in GLHeaders but absent from gl-surface.json"
+  },
+  "glGetResolvedTexture": {
+    "ret": "GLuint",
+    "args": [["GLuint","id"]],
+    "group": "extension",
+    "extension": true,
+    "note": "shim helper: resolved MSAA texture handle"
+  },
+  "glIsSync": {
+    "ret": "GLboolean",
+    "args": [["GLsync","sync"]],
+    "group": "extension",
+    "extension": true,
+    "note": "not in the declared surface; exported by the dylib"
+  },
+  "glDispatchCompute": {
+    "ret": "void",
+    "args": [["GLuint","x"],["GLuint","y"],["GLuint","z"]],
+    "group": "extension",
+    "extension": true,
+    "note": "not in the declared surface; used by the compute emulation"
+  },
+  "glFinish": {
+    "ret": "void",
+    "args": [],
+    "group": "extension",
+    "extension": true,
+    "note": "not in the declared surface; exported by the dylib"
+  },
+  "glEndFrame": {
+    "ret": "void",
+    "args": [],
+    "group": "extension",
+    "extension": true,
+    "note": "shim helper: end pass, present, commit"
+  }
+}

@@ -1,0 +1,15 @@
+#version 430 core
+layout(local_size_x = 64) in;
+struct Particle { vec4 pos; vec4 vel; };
+layout(std430, binding = 0) buffer Particles { Particle p[]; };
+layout(std430, binding = 1) buffer Params { float uDt; };
+void main() {
+    uint i = gl_GlobalInvocationID.x;
+    vec4 vel = p[i].vel;
+    vec4 pos = p[i].pos;
+    vel.y -= 9.8 * uDt;
+    pos += vel * uDt;
+    if (pos.y < 0.0) { pos.y = 0.0; vel.y *= -0.6; }
+    p[i].pos = pos;
+    p[i].vel = vel;
+}
